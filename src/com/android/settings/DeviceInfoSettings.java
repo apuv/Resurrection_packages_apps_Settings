@@ -31,10 +31,17 @@ import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
+import android.support.v7.preference.PreferenceScreen;
 import android.telephony.CarrierConfigManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
+
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.pm.ResolveInfo;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.dashboard.SummaryLoader;
@@ -48,12 +55,18 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import android.text.format.DateFormat;
+import java.util.Locale;
+
 
 import static com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 
@@ -92,6 +105,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DEVICE_MEMORY = "device_memory";
     private static final String KEY_QGP_VERSION = "qgp_version";
     private static final String PROPERTY_QGP_VERSION = "persist.qgp.version";
+    private static final String KEY_CM_UPDATES = "delta_updates";
+    private static final String KEY_DELTA_UPDATES = "delta_updates";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -183,6 +198,14 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         } else {
             getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_MEMORY));
         }
+	    
+	 // Only the owner should see the Updater settings, if it exists
+        if (UserHandle.myUserId() == UserHandle.USER_OWNER) {
+            removePreferenceIfPackageNotInstalled(findPreference(KEY_DELTA_UPDATES));
+        } else {
+            getPreferenceScreen().removePreference(findPreference(KEY_DELTA_UPDATES));
+        }
+	    
 
         // Remove Safety information preference if PROPERTY_URL_SAFETYLEGAL is not set
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_SAFETY_LEGAL,
@@ -628,5 +651,32 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             reader.close();
         }
 	}
+	
+	/**
+	 * Checks if package installed.
+         */ 
+     private boolean removePreferenceIfPackageNotInstalled(Preference preference) {
+        String intentUri=((PreferenceScreen) preference).getIntent().toUri(1);
+        Pattern pattern = Pattern.compile("component=([^/]+)/");
+        Matcher matcher = pattern.matcher(intentUri);
+
+        String packageName=matcher.find()?matcher.group(1):null;
+        if(packageName != null) {
+            try {
+                PackageInfo pi = getPackageManager().getPackageInfo(packageName,
+                        PackageManager.GET_ACTIVITIES);
+                if (!pi.applicationInfo.enabled) {
+                    Log.e(LOG_TAG,"package "+packageName+" is disabled, hiding preference.");
+                    getPreferenceScreen().removePreference(preference);
+                    return true;
+                }
+            } catch (NameNotFoundException e) {
+                Log.e(LOG_TAG,"package "+packageName+" not installed, hiding preference.");
+                getPreferenceScreen().removePreference(preference);
+                return true;
+            }
+        }
+        return false;
+    }
 
 }
