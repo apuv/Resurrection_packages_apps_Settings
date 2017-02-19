@@ -57,6 +57,7 @@
   <string name="rr_ls_ui">Lås UI</string>
   <string name="rr_ls_security">Säkerhet</string>
   <string name="updater_title">Uppdateringar</string>
+  <string name="deltaupdate_settings_title">Delta updates</string>
   <string name="device_maintainers_title">Enheter och utvecklare</string>
   <string name="device_maintainers_title_summary">Lista över enheter och deras officiella RR-OS-utvecklare</string>
   <string name="maintainers_note_title">Anteckning</string>

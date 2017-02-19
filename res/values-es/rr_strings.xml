@@ -62,6 +62,7 @@
   <string name="rr_ls_ui">Interfaz bloqueada</string>
   <string name="rr_ls_security">Seguridad</string>
   <string name="updater_title">Actualizaciones</string>
+  <string name="deltaupdate_settings_title">Delta updates</string>
   <string name="altan_summary">● Fundador \n● Líder de proyecto \n● Desarrollador jefe \n● Diseñador UX \n● Encargado de mantener</string>
   <string name="varun_summary">● Desarrollador principal \n● Diseñador de UX \n● Mantenedor</string>
   <string name="akhil_summary">Desarrollador ● Encargado de mantener \n● Maestro de Javascript\n●</string>

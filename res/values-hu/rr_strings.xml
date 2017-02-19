@@ -62,6 +62,7 @@
   <string name="rr_ls_ui">Zárképernyő felhasználói felület</string>
   <string name="rr_ls_security">Biztonság</string>
   <string name="updater_title">Frissítések</string>
+  <string name="deltaupdate_settings_title">Delta updates</string>
   <string name="altan_summary">● Alapító \n● Projekt vezető \n● Fő fejlesztő \n● UX dizájner \n● Közreműködő</string>
   <string name="varun_summary">● Fő fejlesztő \n● UX dizájner \n● Közreműködő</string>
   <string name="akhil_summary">● Fejlesztő \n● Közreműködő \n● Javascript mester</string>

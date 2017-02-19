@@ -62,6 +62,7 @@
   <string name="rr_ls_ui">Verrouiller l\'interface utilisateur</string>
   <string name="rr_ls_security">Sécurité</string>
   <string name="updater_title">Mises à jour</string>
+  <string name="deltaupdate_settings_title">Delta updates</string>
   <string name="altan_summary">● Fondateur \n● projet leader \n● chef développeur \n● UX designer \n● mainteneur</string>
   <string name="varun_summary">● Développeur principal \n● Concepteur d\'expérience utilisateur \n● Mainteneur</string>
   <string name="akhil_summary">● Développeur \n● mainteneur \n● Javascript master</string>

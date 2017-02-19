@@ -62,6 +62,7 @@
   <string name="rr_ls_ui">Закључавање корисничког интерфејса</string>
   <string name="rr_ls_security">Сигурност</string>
   <string name="updater_title">Ажурирање</string>
+  <string name="deltaupdate_settings_title">Delta updates</string>
   <string name="altan_summary">● Оснивач \n● Вођа пројекта \n● Главни девелопер \n● UX дизајнер \n● Одржавач</string>
   <string name="varun_summary">● Главни девелопер \n● UX дизајнер \n● Одржавач</string>
   <string name="akhil_summary">● Девелопер \n● Održavač \n● ЈаваСкрипт мастер</string>

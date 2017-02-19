@@ -62,6 +62,7 @@
   <string name="rr_ls_ui">Kilit Ekranı Kullanıcı Arayüzü</string>
   <string name="rr_ls_security">Güvenlik</string>
   <string name="updater_title">Güncellemeler</string>
+  <string name="deltaupdate_settings_title">Delta updates</string>
   <string name="altan_summary">● Kurucu \n● Proje lideri \n● Baş geliştiricisi \n● UX tasarımcısı \n● Sorumlu</string>
   <string name="varun_summary">● Baş geliştirici \n● UX tasarımcı \n● Sorumlu</string>
   <string name="akhil_summary">● Geliştirici \n● Sorumlu \n● Javascript ustası</string>

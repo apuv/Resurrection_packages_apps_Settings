@@ -51,6 +51,7 @@
   <string name="rr_ls_ui">قفل واجهة المستخدم</string>
   <string name="rr_ls_security">الأمان</string>
   <string name="updater_title">تحديثات</string>
+  <string name="deltaupdate_settings_title">Delta updates</string>
   <string name="device_maintainers_title">الأجهزة و المشرفين</string>
   <string name="maintainers_note_title">ملاحظة</string>
   <string name="maintainers_note_title_summary">أرسل رسالة خاصة إلى \'Varun Date\' على Hangouts تحتوي على رابط صفحة الروم الخاصة بك إذا كنت ترغب في أن يتم إضافة إسمك لقائمة \"مشرفي الجهاز\".</string>

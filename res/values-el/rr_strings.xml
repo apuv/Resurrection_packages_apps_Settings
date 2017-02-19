@@ -62,6 +62,7 @@
   <string name="rr_ls_ui">UI κλειδώματος</string>
   <string name="rr_ls_security">Ασφάλεια</string>
   <string name="updater_title">Ενημερώσεις</string>
+  <string name="deltaupdate_settings_title">Delta updates</string>
   <string name="device_maintainers_title">Συσκευές και συντηρητές</string>
   <string name="maintainers_note_title">Σημείωση</string>
   <string name="maintainers_note_title_summary">Στείλτε ένα προσωπικό μήνυμα στον \'Varun Date\' στο Hangouts συμπεριλαμβάνοντας τον σύνδεσμο του λογισμικού από το θέμα του φόρουμ εάν επιθυμείτε το όνομά σας να προστεθεί στη λίστα των συντηρητών.</string>

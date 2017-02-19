@@ -62,6 +62,7 @@
   <string name="rr_ls_ui">Khóa giao diện người dùng</string>
   <string name="rr_ls_security">Bảo mật</string>
   <string name="updater_title">Cập nhật</string>
+  <string name="deltaupdate_settings_title">Delta updates</string>
   <string name="altan_summary">● Người sáng lập \n● Người lãnh đạo dự án \n● Người đứng đầu phát triển \n● Người thiết kế UX \n● Người bảo trì</string>
   <string name="varun_summary">● Người đứng đầu phát triển \n● Người thiết kế UX \n● Người bảo trì</string>
   <string name="akhil_summary">● Người phát triển \n● Người bảo trì \n● Javascript master</string>

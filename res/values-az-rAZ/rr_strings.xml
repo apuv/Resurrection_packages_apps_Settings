@@ -47,6 +47,7 @@
   <string name="rr_ls_ui">Kilid Ekranı İstifadəçi İnterfeysi</string>
   <string name="rr_ls_security">Təhlükəsizlik</string>
   <string name="updater_title">Yeniləmələr</string>
+  <string name="deltaupdate_settings_title">Delta updates</string>
   <string name="device_maintainers_title">Cihazlar ve Məsul Şəxsləri</string>
   <string name="maintainers_note_title">Qeyd</string>
   <string name="maintainers_note_title_summary">Əgər adınızı Cihaz Məsul Şəxsləri siyahısına əlavə etmək istəyirsinizsə ROM Mövzusu əlaqəsi olan bir Şəxsi Mesajı Hangoutstan \'Varın Date\' ə göndərin.</string>

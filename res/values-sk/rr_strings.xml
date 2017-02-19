@@ -62,6 +62,7 @@
   <string name="rr_ls_ui">Zámok užívateľského rozhrania</string>
   <string name="rr_ls_security">Bezpečnosť</string>
   <string name="updater_title">Aktualizácie</string>
+  <string name="deltaupdate_settings_title">Delta updates</string>
   <string name="altan_summary">● Zakladateľ \n● Vedúci projektu \n● Hlavný vývojár \n● UX dizajnér \n● Správca</string>
   <string name="varun_summary">● Hlavný vývojár \n● UX dizajnér \n● Správca</string>
   <string name="akhil_summary">● Vývojár \n● Správca \n● Javascript majster</string>

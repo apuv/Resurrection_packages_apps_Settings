@@ -59,6 +59,7 @@
   <string name="rr_ls_ui">잠금 UI</string>
   <string name="rr_ls_security">보안</string>
   <string name="updater_title">업데이트</string>
+  <string name="deltaupdate_settings_title">Delta updates</string>
   <string name="altan_summary">● 설립자 \n● 프로젝트 리더 \n● 해드 개발자 \n● UX 디자이너 \n● 관리자</string>
   <string name="device_maintainers_title">기기 및 메인테이너</string>
   <string name="device_maintainers_title_summary">기기 목록 및 기기 공식 RR-OS 관리자</string>

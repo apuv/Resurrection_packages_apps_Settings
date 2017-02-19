@@ -44,6 +44,7 @@
   <string name="rr_ls_ui">Lås UI</string>
   <string name="rr_ls_security">Sikkerhed</string>
   <string name="updater_title">Opdateringer</string>
+  <string name="deltaupdate_settings_title">Delta updates</string>
   <string name="device_maintainers_title">Enheder og vedligeholdere</string>
   <!-- The Drill -->
   <!-- RR Feature lists-->

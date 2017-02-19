@@ -63,6 +63,7 @@
     <string name="rr_ls_ui">Lock UI</string>
     <string name="rr_ls_security">Security</string>
     <string name="updater_title">Updates</string>
+  <string name="deltaupdate_settings_title">Delta updates</string>
 
     <string name="altan_summary">● Founder \n● Project leader \n● Head developer \n● UX designer \n● Maintainer</string>
     <string name="varun_summary">● Head developer \n● UX designer \n● Maintainer</string>

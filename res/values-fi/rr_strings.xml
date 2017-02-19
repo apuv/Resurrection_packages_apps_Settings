@@ -25,6 +25,7 @@
   <string name="rr_lockscreen_title">Lukitusnäyttö</string>
   <string name="rr_ls_security">Turvallisuus</string>
   <string name="updater_title">Päivitykset</string>
+  <string name="deltaupdate_settings_title">Delta updates</string>
   <!-- The Drill -->
   <!-- RR Feature lists-->
   <!-- Share RR ROM -->
